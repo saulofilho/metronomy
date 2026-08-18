@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background rounded box -->
+  <rect width="100" height="100" rx="24" fill="url(#bgGrad)" stroke="#27272a" stroke-width="2"/>
+  
+  <!-- Metronome body pyramid -->
+  <path d="M 32 82 L 40 24 L 60 24 L 68 82 Z" fill="#18181b" stroke="#3f3f46" stroke-width="2"/>
+  
+  <!-- Metronome internal scale marks -->
+  <line x1="43" y1="42" x2="57" y2="42" stroke="#52525b" stroke-width="1.5"/>
+  <line x1="41" y1="54" x2="59" y2="54" stroke="#52525b" stroke-width="1.5"/>
+  <line x1="39" y1="66" x2="61" y2="66" stroke="#52525b" stroke-width="1.5"/>
+  
+  <!-- Pendulum arm (swinging) -->
+  <line x1="50" y1="78" x2="64" y2="28" stroke="url(#glowGrad)" stroke-width="3.5" stroke-linecap="round" filter="url(#glow)"/>
+  
+  <!-- Pendulum weight bob -->
+  <rect x="56" y="44" width="9" height="12" rx="2.5" fill="#38bdf8" stroke="#ffffff" stroke-width="1" transform="rotate(18 60 50)" filter="url(#glow)"/>
+  
+  <!-- Pivot base dot -->
+  <circle cx="50" cy="78" r="4.5" fill="#22d3ee" />
+  <circle cx="50" cy="78" r="2" fill="#ffffff" />
+</svg>

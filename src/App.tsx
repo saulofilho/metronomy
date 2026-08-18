@@ -421,8 +421,17 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
           {/* Logo & Live Status */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-emerald-400 flex items-center justify-center text-zinc-950 font-black text-lg shadow-[0_0_15px_rgba(6,182,212,0.4)]">
-              M
+            <div className="relative w-9 h-9 rounded-xl overflow-hidden border border-cyan-500/40 shadow-[0_0_15px_rgba(6,182,212,0.35)] flex-shrink-0 bg-zinc-900">
+              <img
+                src="/icon.jpg"
+                alt="Ícone do Metrônomo Pro"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  // Fallback to stylized SVG icon if image file fails
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
             </div>
             <div>
               <div className="flex items-center gap-2">
