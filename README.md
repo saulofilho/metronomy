@@ -104,6 +104,30 @@ npm run build
 
 ---
 
+## 🌐 Como Publicar no GitHub Pages
+
+O projeto já está 100% configurado com **GitHub Actions** automatizado e caminhos relativos (`base: './'`) no Vite.
+
+### Passo 1: Exportar ou Enviar o Código para o seu Repositório GitHub
+Se estiver no Google AI Studio, você pode exportar para o GitHub pelo menu de configurações ou via terminal:
+
+```bash
+git init
+git add .
+git commit -m "feat: Metronomo Pro pronto para GitHub Pages"
+git branch -M main
+git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+git push -u origin main
+```
+
+### Passo 2: Ativar o GitHub Pages no Repositório
+1. No seu repositório no GitHub, acesse **Settings** (Configurações) > **Pages** (no menu lateral esquerdo).
+2. Em **Build and deployment** > **Source**, selecione **`GitHub Actions`**.
+3. Pronto! O fluxo de automação `.github/workflows/deploy.yml` executará o build e publicará seu site automaticamente em:
+   `https://SEU_USUARIO.github.io/SEU_REPOSITORIO/`
+
+---
+
 ## 📄 Licença
 
 Distribuído sob a licença **Apache-2.0**.
