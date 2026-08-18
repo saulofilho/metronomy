@@ -1,0 +1,6 @@
+{
+  "name": "Metrônomo Pro - Palco & Ensaio",
+  "description": "Metrônomo profissional de alta precisão com suporte a setlists para shows, modo palco fullscreen, subdivisões rítmicas, gerador de afinação e treinador de andamento para músicos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
