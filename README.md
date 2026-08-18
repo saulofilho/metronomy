@@ -1,7 +1,7 @@
 # 🎵 Metrônomo Pro — Palco & Ensaio
 
 <div align="center">
-  <img src="/public/icon.jpg" alt="Metrônomo Pro Avatar" width="128" height="128" style="border-radius: 28px; box-shadow: 0 10px 30px rgba(6, 182, 212, 0.35);" />
+  <img src="./public/icon.jpg" alt="Metrônomo Pro Avatar" width="128" height="128" style="border-radius: 28px; box-shadow: 0 10px 30px rgba(6, 182, 212, 0.35);" />
   <br />
   <p><strong>Metrônomo profissional de alta precisão projetado para músicos durante ensaios técnicos, estudos e apresentações ao vivo.</strong></p>
 </div>

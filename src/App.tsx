@@ -20,6 +20,7 @@ import { PracticeTools } from './components/PracticeTools';
 import { TunerTone } from './components/TunerTone';
 import { SoundSettingsModal } from './components/SoundSettingsModal';
 import { KeyboardShortcutsModal } from './components/KeyboardShortcutsModal';
+import { AppLogo } from './components/AppLogo';
 import {
   Play,
   Square,
@@ -421,18 +422,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
           {/* Logo & Live Status */}
           <div className="flex items-center gap-3">
-            <div className="relative w-9 h-9 rounded-xl overflow-hidden border border-cyan-500/40 shadow-[0_0_15px_rgba(6,182,212,0.35)] flex-shrink-0 bg-zinc-900">
-              <img
-                src="/icon.jpg"
-                alt="Ícone do Metrônomo Pro"
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  // Fallback to stylized SVG icon if image file fails
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-            </div>
+            <AppLogo size="md" />
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-base font-bold tracking-tight text-zinc-100">
